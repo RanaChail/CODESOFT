@@ -6,6 +6,7 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
+  overflow-x: none;
   font-family: "Poppins", sans-serif;
 }
 
@@ -346,6 +347,7 @@ section {
     width: 70%;
     border-radius: 15px;
     box-shadow: -8px 8px 12px rgba(169, 169, 169, 0.608);
+    opacity: 1;
     transition: .5s ease;
 }
 
@@ -629,6 +631,7 @@ section {
   background: transparent;
   border-radius: .8rem;
   border: .2rem solid var(--main-color);
+  transition: .5s;
 }
 
 .contact form .textarea-field{
@@ -733,6 +736,11 @@ section {
   .about-col-1 img{
     width: 78%;
     margin-left: 12%;
+  }
+
+  .about-col-1 img:hover{
+    width: 85%;
+    box-shadow: 8px 8px 12px rgba(239, 10, 182, 0.597);
   }
 
   .box{
@@ -860,5 +868,225 @@ section {
       pointer-events: none;
       background: var(--bg-color);
       opacity: .6;
+  }
+}
+
+@media(max-width: 745px){
+  .header{
+    padding: 2rem 5%;
+  }
+
+  #about{
+    padding-top: 10rem;
+  }
+
+  .tab-contents p{
+    margin: 0.8rem 0rem;
+  }
+
+  .tab-titles p{
+    font-size: 1.2rem;
+  }
+
+  .about-col-1 img{
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .about-col-1 img:hover{
+    width: 95%;
+    box-shadow: 8px 8px 12px rgba(239, 10, 182, 0.597);
+  }
+}
+
+@media(max-width:680px){
+  html{
+    font-size: 50%;
+  }
+
+  .about-col-2 p{
+    font-size: 1.15rem;
+  }
+
+  .tab-titles p{
+    font-size: 1.05rem;
+  }
+
+  .box-button{
+    font-size: 1.2rem;
+  }
+
+  .services h2, .membership h2, .contact h2, .about h2{
+    font-size: 4.5rem;
+  }
+
+  .contact form .input-box .input-field input, .contact form .textarea-field textarea{
+    border-radius: 2.8rem;
+  }
+}
+
+@media(max-width:550px){
+  html{
+    font-size: 45%;
+  }
+
+  section {
+    padding: 6rem 1.5% 2rem;
+}
+
+  #about{
+    padding-top: 11rem;
+  }
+
+  .btn-box{
+    margin: 0 31%;
+  }
+
+  .home-social{
+    margin: 0 31%;
+  }
+
+  .card{
+    margin: 0;
+    width: 32%;
+  }
+
+  .box-row{
+    margin: 0 1rem;
+  }
+
+  .list-item li {
+    margin: 2px 0;
+  }
+
+  .box{
+    margin: 10% 1%;
+  }
+}
+
+@media(max-width:450px){
+  html{
+    font-size: 40%;
+  }
+
+  .home{
+    justify-content: space-evenly;
+  }
+
+  .home-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-content p{
+    text-align: center;
+  }
+
+  .row{
+    flex-direction: column;
+  }
+
+  #about{
+    padding-top: 5rem;
+  }
+
+  .about-col-2{
+    margin: 2rem 0;
+  }
+
+  .about-col-2 p{
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .sub-title{
+    margin: auto;
+    text-align: center;
+  }
+
+  .tab-titles{
+    justify-content: center;
+  }
+
+  .about-col-1 img{
+    width: 75%;
+    margin-left: 16%;
+  }
+
+  .btn-box{
+    margin: 0 36%;
+  }
+}
+
+@media(max-width:380px){
+  .header{
+    padding: 1.5rem 3%;
+  }
+
+  .about-col-1 img{
+    width: 70%;
+  }
+
+  .about-col-1 img:hover{
+    width: 70%;
+  }
+
+  .service-content{
+    flex-direction: column;
+  }
+
+  .card{
+    margin: 10% 0;
+    width: 70%;
+  }
+
+  .card-content p{
+    font-size: 1.8rem;
+  }
+
+  .card-content h3{
+    font-size: 2.2rem;
+  }
+
+  .box-row{
+    flex-direction: column;
+  }
+
+  .box{
+    width: 75%;
+    margin: 5% 1%;
+  }
+
+  .box h3{
+    font-size: 3rem;
+  }
+
+  .box p{
+    font-size: 1.8rem;
+  }
+
+  .list-item li{
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  .box-button{
+    border-radius: 20px;
+    font-size: 1.5rem;
+  }
+
+  .contact form .input-box .input-field{
+    width: 100%;
+  }
+
+  .footer{
+    flex-direction: column-reverse;
+  }
+
+  .footer-text p{
+    margin: 3% 0;
   }
 }
